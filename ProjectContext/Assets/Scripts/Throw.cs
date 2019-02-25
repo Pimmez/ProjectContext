@@ -2,11 +2,15 @@
 
 public class Throw : MonoBehaviour
 {
+	public float FireRate { get{ return fireRate; } }
+	public float NextFire { get { return nextFire; } }
+
 	[SerializeField] private GameObject prefab;
-	[SerializeField] private float fireRate = 1;
-	[SerializeField] private float nextFire = 0.0F;
 	[SerializeField] private float throwSrength = 100;
 	[SerializeField] private GameObject ArmPosition;
+
+	private float fireRate = 1;
+	private float nextFire = 0.0F;
 
 	private void Start()
 	{
@@ -17,6 +21,7 @@ public class Throw : MonoBehaviour
 	{
 		if (Input.GetMouseButtonDown(0) && Time.time > nextFire)
 		{
+			FirerateUI.Instance.CoolDown = true;
 			nextFire = Time.time + fireRate;
 			GameObject projectile = Instantiate(prefab, ArmPosition.transform, false) as GameObject;
 			Rigidbody rb = projectile.GetComponent<Rigidbody>();
