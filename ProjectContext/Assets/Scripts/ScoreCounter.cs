@@ -33,11 +33,11 @@ public class ScoreCounter : MonoBehaviour
 
 	private void OnEnable()
 	{
-		DestroyOnContact.EnemyDeadEvent += ScoreUpdater;
+		EnemyBehaviour.EnemyDeadEvent += ScoreUpdater;
 	}
 
 	private void OnDisable()
 	{
-		DestroyOnContact.EnemyDeadEvent -= ScoreUpdater;
+		EnemyBehaviour.EnemyDeadEvent -= ScoreUpdater;
 	}
 }
