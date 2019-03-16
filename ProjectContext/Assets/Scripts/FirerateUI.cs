@@ -35,7 +35,7 @@ public class FirerateUI : MonoBehaviour
 		{
 			image.fillAmount -= 1.0f / waitTime * Time.deltaTime;
 		}
-		if(image.fillAmount == 0)
+		if (image.fillAmount == 0)
 		{
 			image.fillAmount = 1;
 			isCoolingdown = false;
