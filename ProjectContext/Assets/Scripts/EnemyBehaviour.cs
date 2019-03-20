@@ -1,49 +1,34 @@
 ﻿using UnityEngine;
 using System;
+using System.Collections;
 using Random = UnityEngine.Random;
 
 public class EnemyBehaviour : MonoBehaviour
 {
 	public static Action EnemyDeadEvent;
 
-	[SerializeField] private float duration = 3f;
-	private float time = 0;
-	private new Renderer renderer;
 	private bool isVulnerable = false;
+	[SerializeField] private Animator anim;
 
-	private void Start()
-	{
-		renderer = GetComponent<Renderer>();
-	}
 
 	private void Update()
 	{
-		Invoke("ColorChanger", Random.Range(3, 10));
+		InvokeRepeating("TriggerGrab", Random.Range(3, 10), Random.Range(3, 10));
+		isVulnerable = true;
 	}
 
-	private void ColorChanger()
+	private void TriggerGrab()
 	{
-		renderer.material.color = Color.Lerp(Color.cyan, Color.red, time);
-		IsTargetHit();
-
-		if (time < 1)
-		{
-			time += Time.deltaTime / duration;
-		}
+		StartCoroutine("Grab");
 	}
 
-	private void IsTargetHit()
+	private IEnumerator Grab()
 	{
-		if(renderer.material.color != Color.red)
-		{
-			//Debug.Log("Can be hit");
-			isVulnerable = true;
-		}
-		else
-		{
-			//Debug.Log("RAPING IN PROGRESS");
-			isVulnerable = false;
-		}
+		anim.SetBool("Pickup", true);
+
+		yield return new WaitForSeconds(.5f);
+
+		anim.SetBool("Pickup", false);
 	}
 
 	private void OnCollisionEnter(Collision col)
