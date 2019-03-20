@@ -13,20 +13,15 @@ public class EnemyBehaviour : MonoBehaviour
 
 	private void Update()
 	{
-		InvokeRepeating("TriggerGrab", Random.Range(3, 10), Random.Range(3, 10));
-		isVulnerable = true;
-	}
-
-	private void TriggerGrab()
-	{
 		StartCoroutine("Grab");
+		isVulnerable = true;
 	}
 
 	private IEnumerator Grab()
 	{
 		anim.SetBool("Pickup", true);
 
-		yield return new WaitForSeconds(.5f);
+		yield return new WaitForSeconds(3f);
 
 		anim.SetBool("Pickup", false);
 	}
