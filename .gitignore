@@ -34,3 +34,23 @@ sysinfo.txt
 # Builds
 *.apk
 *.unitypackage
+ProjectContext/Assets/Fonts.meta
+ProjectContext/Logs/Packages-Update.log
+ProjectContext/Packages/manifest.json
+ProjectContext/ProjectSettings/AudioManager.asset
+ProjectContext/ProjectSettings/ClusterInputManager.asset
+ProjectContext/ProjectSettings/DynamicsManager.asset
+ProjectContext/ProjectSettings/EditorBuildSettings.asset
+ProjectContext/ProjectSettings/EditorSettings.asset
+ProjectContext/ProjectSettings/GraphicsSettings.asset
+ProjectContext/ProjectSettings/InputManager.asset
+ProjectContext/ProjectSettings/NavMeshAreas.asset
+ProjectContext/ProjectSettings/Physics2DSettings.asset
+ProjectContext/ProjectSettings/PresetManager.asset
+ProjectContext/ProjectSettings/ProjectSettings.asset
+ProjectContext/ProjectSettings/ProjectVersion.txt
+ProjectContext/ProjectSettings/QualitySettings.asset
+ProjectContext/ProjectSettings/TagManager.asset
+ProjectContext/ProjectSettings/TimeManager.asset
+ProjectContext/ProjectSettings/UnityConnectSettings.asset
+ProjectContext/ProjectSettings/VFXManager.asset

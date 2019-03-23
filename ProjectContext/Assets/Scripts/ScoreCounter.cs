@@ -13,7 +13,7 @@ public class ScoreCounter : MonoBehaviour
     {
 		scoreText = GetComponent<Text>();
 		totalScore = 0;
-		scoreText.text = "Score: " + totalScore + " / " + MaxScore;
+		scoreText.text = totalScore + "/" + MaxScore;
 	}
 
 	// Update is called once per frame
@@ -28,16 +28,16 @@ public class ScoreCounter : MonoBehaviour
 	private void ScoreUpdater()
 	{
 		totalScore += 1;
-		scoreText.text = "Score: " + totalScore + " / " + MaxScore;
+		scoreText.text = totalScore + "/" + MaxScore;
 	}
 
 	private void OnEnable()
 	{
-		DestroyOnContact.EnemyDeadEvent += ScoreUpdater;
+		EnemyBehaviour.EnemyDeadEvent += ScoreUpdater;
 	}
 
 	private void OnDisable()
 	{
-		DestroyOnContact.EnemyDeadEvent -= ScoreUpdater;
+		EnemyBehaviour.EnemyDeadEvent -= ScoreUpdater;
 	}
 }
