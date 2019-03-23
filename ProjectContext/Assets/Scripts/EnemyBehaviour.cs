@@ -1,7 +1,6 @@
 ﻿using UnityEngine;
 using System;
 using System.Collections;
-using Random = UnityEngine.Random;
 
 public class EnemyBehaviour : MonoBehaviour
 {
