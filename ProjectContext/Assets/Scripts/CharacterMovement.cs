@@ -2,14 +2,15 @@
 
 public class CharacterMovement : MonoBehaviour
 {
-
 	private float mouseInput;
 	private Vector3 lookAround;
 	[SerializeField] private float sensitivity = 100;
+	private CursorLockMode hideMode;
 
-	private void Start()
+	private void Awake()
 	{
 		Cursor.visible = false;
+		Cursor.lockState = hideMode = CursorLockMode.Locked;
 	}
 
 	void Update()

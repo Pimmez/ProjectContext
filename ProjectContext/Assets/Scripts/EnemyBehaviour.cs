@@ -25,7 +25,7 @@ public class EnemyBehaviour : MonoBehaviour
 		anim.SetBool("Pickup", false);
 	}
 
-	private void OnCollisionEnter(Collision col)
+	private void OnTriggerEnter(Collider col)
 	{
 		if(isVulnerable)
 		{
