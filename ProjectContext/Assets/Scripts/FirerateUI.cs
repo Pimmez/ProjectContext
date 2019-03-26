@@ -28,8 +28,7 @@ public class FirerateUI : MonoBehaviour
 	private void Start()
     {
 		image = GetComponent<Image>();
-        fire.GetComponent<Throw>();
-        waitTime = fire.fireRate;
+        waitTime = fire.FireRate;
     }
 
     private void Update()
