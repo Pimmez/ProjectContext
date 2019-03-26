@@ -5,6 +5,7 @@ public class PlayerController : MonoBehaviour
 {
 	[SerializeField] private float lookSensitivityX = 5f;
 	[SerializeField] private float lookSensitivityY = 5f;
+	private bool inputSelection = true;
 
 	private PlayerMotor playerMotor;
 	private float yRot, xRot, yConRot, xConRot;
@@ -18,7 +19,6 @@ public class PlayerController : MonoBehaviour
 
     private void Update()
     {
-		//MouseInput();
 		ControllerInput();
 	}
 
@@ -35,7 +35,7 @@ public class PlayerController : MonoBehaviour
 		//Cam Vertical Rotation
 		xRot = Input.GetAxisRaw("Mouse Y");
 
-		Vector3 _camRotation = new Vector3(-xRot, 0, 0) * lookSensitivityY;
+		Vector3 _camRotation = new Vector3(xRot, 0, 0) * lookSensitivityY;
 
 		playerMotor.RotateCamera(_camRotation);
 	}
@@ -46,15 +46,15 @@ public class PlayerController : MonoBehaviour
 		//Player Horizontal Rotation
 		yConRot = Input.GetAxisRaw("HorizontalController");
 
-		Vector3 _rotation = new Vector3(0, yConRot, 0) * lookSensitivityX;
+		Vector3 _Conrotation = new Vector3(0, yConRot, 0) * lookSensitivityX;
 
-		playerMotor.Rotate(_rotation);
+		playerMotor.Rotate(_Conrotation);
 
 		//Cam Vertical Rotation
 		xConRot = Input.GetAxisRaw("VerticalController");
 
-		Vector3 _camRotation = new Vector3(xConRot, 0, 0) * lookSensitivityY;
+		Vector3 _camConRotation = new Vector3(xConRot, 0, 0) * lookSensitivityY;
 
-		playerMotor.RotateCamera(_camRotation);
+		playerMotor.RotateCamera(_camConRotation);
 	}
 }

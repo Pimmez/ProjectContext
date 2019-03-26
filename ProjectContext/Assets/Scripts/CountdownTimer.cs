@@ -7,6 +7,9 @@ public class CountdownTimer : MonoBehaviour
 	[Tooltip("Timer in Seconds")]
 	[SerializeField] private float timer = 60f;
 
+	[Tooltip("Penalty What gets decreased from the Timer (In Seconds)")]
+	[SerializeField] private float penaltyTime = 10;
+
 	private Text timerText;
 
 	private void Start()
@@ -42,5 +45,20 @@ public class CountdownTimer : MonoBehaviour
 		}
 
 		timerText.text = minutes.ToString("00") + ":" + seconds.ToString("00");
+	}
+
+	private void FaultTimer()
+	{
+		timer -= penaltyTime;
+	}
+
+	private void OnEnable()
+	{
+		NPCBehaviour.NPCHitEvent += FaultTimer;
+	}
+
+	private void OnDisable()
+	{
+		NPCBehaviour.NPCHitEvent -= FaultTimer;
 	}
 }
