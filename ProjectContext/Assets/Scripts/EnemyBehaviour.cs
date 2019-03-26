@@ -11,10 +11,13 @@ public class EnemyBehaviour : MonoBehaviour
 	private bool isVulnerable = false;
 	[SerializeField] private Animator anim;
 
+    private GameObject particle;
+
 	private void Start()
 	{
 		sound = FindObjectOfType<SoundManager>();
-	}
+        particle = Resources.Load("particle_hearts") as GameObject;
+    }
 
 	private void Update()
 	{
@@ -38,7 +41,7 @@ public class EnemyBehaviour : MonoBehaviour
 			if (col.gameObject.tag == Tags.Bear)
 			{
 				Destroy(this.gameObject);
-				Destroy(col.gameObject);
+                Instantiate(particle, col.transform);
 				sound.PlayAudio(2);
 
 				if (EnemyDeadEvent != null)
