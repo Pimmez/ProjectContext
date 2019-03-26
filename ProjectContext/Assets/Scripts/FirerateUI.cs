@@ -20,6 +20,7 @@ public class FirerateUI : MonoBehaviour
 	public bool CoolDown { get { return isCoolingdown; } set { isCoolingdown = value; } }
 
 	private Image image;
+    [SerializeField] private Throw fire;
 	private float waitTime = 1f;
 
 	private bool isCoolingdown = false;
@@ -27,6 +28,8 @@ public class FirerateUI : MonoBehaviour
 	private void Start()
     {
 		image = GetComponent<Image>();
+        fire.GetComponent<Throw>();
+        waitTime = fire.fireRate;
     }
 
     private void Update()
