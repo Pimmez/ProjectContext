@@ -1,68 +1,99 @@
 fileFormatVersion: 2
-guid: 2f9b26dd921734ef59cc5668015a7494
+guid: 1052a85ec85184288a0d057e893590cb
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
-    100000: //RootNode
-    100002: initialShadingGroup_C_man_1_FBX2014polySurface5
-    100004: initialShadingGroup_pasted__polySurface2pasted__Tops19grouppasted__polySurface6
-    100006: initialShadingGroup_pasted__polySurface7pasted__polySurface2pasted__Tops19grouppasted__polySurface12pasted__polySurface10polySurface7polySurface10
-    100008: initialShadingGroup_pasted__polySurface7pasted__polySurface2pasted__Tops19grouppasted__polySurface12pasted__polySurface10polySurface7polySurface9
-    100010: initialShadingGroup_pasted__polySurface7pasted__polySurface2pasted__Tops19grouppasted__polySurface12pasted__polySurface10polySurface8polySurface7
-    100012: initialShadingGroup_pasted__polySurface7pasted__polySurface2pasted__Tops19grouppasted__polySurface8
-    100014: initialShadingGroup_pasted__polySurface7pasted__polySurface2pasted__Tops19grouppasted__polySurface9
-    100016: initialShadingGroup_pasted__polySurface7pasted__polySurface2pasted__Tops19grouppolySurface6pasted__polySurface12pasted__polySurface10
-    100018: initialShadingGroup_pasted__Tops19grouppasted__polySurface4pasted__polySurface3
-    100020: Girl_root
-    400000: //RootNode
-    400002: initialShadingGroup_C_man_1_FBX2014polySurface5
-    400004: initialShadingGroup_pasted__polySurface2pasted__Tops19grouppasted__polySurface6
-    400006: initialShadingGroup_pasted__polySurface7pasted__polySurface2pasted__Tops19grouppasted__polySurface12pasted__polySurface10polySurface7polySurface10
-    400008: initialShadingGroup_pasted__polySurface7pasted__polySurface2pasted__Tops19grouppasted__polySurface12pasted__polySurface10polySurface7polySurface9
-    400010: initialShadingGroup_pasted__polySurface7pasted__polySurface2pasted__Tops19grouppasted__polySurface12pasted__polySurface10polySurface8polySurface7
-    400012: initialShadingGroup_pasted__polySurface7pasted__polySurface2pasted__Tops19grouppasted__polySurface8
-    400014: initialShadingGroup_pasted__polySurface7pasted__polySurface2pasted__Tops19grouppasted__polySurface9
-    400016: initialShadingGroup_pasted__polySurface7pasted__polySurface2pasted__Tops19grouppolySurface6pasted__polySurface12pasted__polySurface10
-    400018: initialShadingGroup_pasted__Tops19grouppasted__polySurface4pasted__polySurface3
-    400020: Girl_root
-    2100000: initialShadingGroup_C_man_1_FBX2014polySurface5Mat
-    2100002: initialShadingGroup_pasted__polySurface2pasted__Tops19grouppasted__polySurface6Mat
-    2100004: initialShadingGroup_pasted__polySurface7pasted__polySurface2pasted__Tops19grouppasted__polySurface12pasted__polySurface10polySurface7polySurface10Mat
-    2100006: initialShadingGroup_pasted__polySurface7pasted__polySurface2pasted__Tops19grouppasted__polySurface12pasted__polySurface10polySurface7polySurface9Mat
-    2100008: initialShadingGroup_pasted__polySurface7pasted__polySurface2pasted__Tops19grouppasted__polySurface12pasted__polySurface10polySurface8polySurface7Mat
-    2100010: initialShadingGroup_pasted__polySurface7pasted__polySurface2pasted__Tops19grouppasted__polySurface8Mat
-    2100012: initialShadingGroup_pasted__polySurface7pasted__polySurface2pasted__Tops19grouppasted__polySurface9Mat
-    2100014: initialShadingGroup_pasted__polySurface7pasted__polySurface2pasted__Tops19grouppolySurface6pasted__polySurface12pasted__polySurface10Mat
-    2100016: initialShadingGroup_pasted__Tops19grouppasted__polySurface4pasted__polySurface3Mat
-    2300000: initialShadingGroup_C_man_1_FBX2014polySurface5
-    2300002: initialShadingGroup_pasted__polySurface2pasted__Tops19grouppasted__polySurface6
-    2300004: initialShadingGroup_pasted__polySurface7pasted__polySurface2pasted__Tops19grouppasted__polySurface12pasted__polySurface10polySurface7polySurface10
-    2300006: initialShadingGroup_pasted__polySurface7pasted__polySurface2pasted__Tops19grouppasted__polySurface12pasted__polySurface10polySurface7polySurface9
-    2300008: initialShadingGroup_pasted__polySurface7pasted__polySurface2pasted__Tops19grouppasted__polySurface12pasted__polySurface10polySurface8polySurface7
-    2300010: initialShadingGroup_pasted__polySurface7pasted__polySurface2pasted__Tops19grouppasted__polySurface8
-    2300012: initialShadingGroup_pasted__polySurface7pasted__polySurface2pasted__Tops19grouppasted__polySurface9
-    2300014: initialShadingGroup_pasted__polySurface7pasted__polySurface2pasted__Tops19grouppolySurface6pasted__polySurface12pasted__polySurface10
-    2300016: initialShadingGroup_pasted__Tops19grouppasted__polySurface4pasted__polySurface3
-    3300000: initialShadingGroup_C_man_1_FBX2014polySurface5
-    3300002: initialShadingGroup_pasted__polySurface2pasted__Tops19grouppasted__polySurface6
-    3300004: initialShadingGroup_pasted__polySurface7pasted__polySurface2pasted__Tops19grouppasted__polySurface12pasted__polySurface10polySurface7polySurface10
-    3300006: initialShadingGroup_pasted__polySurface7pasted__polySurface2pasted__Tops19grouppasted__polySurface12pasted__polySurface10polySurface7polySurface9
-    3300008: initialShadingGroup_pasted__polySurface7pasted__polySurface2pasted__Tops19grouppasted__polySurface12pasted__polySurface10polySurface8polySurface7
-    3300010: initialShadingGroup_pasted__polySurface7pasted__polySurface2pasted__Tops19grouppasted__polySurface8
-    3300012: initialShadingGroup_pasted__polySurface7pasted__polySurface2pasted__Tops19grouppasted__polySurface9
-    3300014: initialShadingGroup_pasted__polySurface7pasted__polySurface2pasted__Tops19grouppolySurface6pasted__polySurface12pasted__polySurface10
-    3300016: initialShadingGroup_pasted__Tops19grouppasted__polySurface4pasted__polySurface3
-    4300000: initialShadingGroup_C_man_1_FBX2014polySurface5
-    4300002: initialShadingGroup_pasted__polySurface2pasted__Tops19grouppasted__polySurface6
-    4300004: initialShadingGroup_pasted__polySurface7pasted__polySurface2pasted__Tops19grouppasted__polySurface12pasted__polySurface10polySurface7polySurface10
-    4300006: initialShadingGroup_pasted__polySurface7pasted__polySurface2pasted__Tops19grouppasted__polySurface12pasted__polySurface10polySurface7polySurface9
-    4300008: initialShadingGroup_pasted__polySurface7pasted__polySurface2pasted__Tops19grouppasted__polySurface12pasted__polySurface10polySurface8polySurface7
-    4300010: initialShadingGroup_pasted__polySurface7pasted__polySurface2pasted__Tops19grouppasted__polySurface8
-    4300012: initialShadingGroup_pasted__polySurface7pasted__polySurface2pasted__Tops19grouppasted__polySurface9
-    4300014: initialShadingGroup_pasted__polySurface7pasted__polySurface2pasted__Tops19grouppolySurface6pasted__polySurface12pasted__polySurface10
-    4300016: initialShadingGroup_pasted__Tops19grouppasted__polySurface4pasted__polySurface3
+    100000: arm1.l
+    100002: arm1.r.001
+    100004: arm2.l
+    100006: arm2.r.001
+    100008: Armature
+    100010: Bone
+    100012: Bone.001
+    100014: Bone.003
+    100016: Bone.004
+    100018: Bone.004_end
+    100020: Bottoms19
+    100022: C_man_1_FBX2014 polySurface1
+    100024: //RootNode
+    100026: foot.l
+    100028: foot.l_end
+    100030: foot.r.001
+    100032: foot.r.001_end
+    100034: hand.l
+    100036: hand.l_end
+    100038: hand.r.001
+    100040: hand.r.001_end
+    100042: leg1.l
+    100044: leg1.r.001
+    100046: leg2.l
+    100048: leg2.r.001
+    100050: pasted__polySurface13 pasted__polySurface7 pasted__polySurface2
+    100052: pasted__polySurface7 pasted__polySurface2 pasted__Tops19 gr.001
+    100054: polySurface15 polySurface2 C_man_1_FBX2014
+    100056: polySurface2 C_man_1_FBX2014 polySurface16
+    100058: pSphere3
+    100060: pSphere4
+    100062: Tops8
+    400000: arm1.l
+    400002: arm1.r.001
+    400004: arm2.l
+    400006: arm2.r.001
+    400008: Armature
+    400010: Bone
+    400012: Bone.001
+    400014: Bone.003
+    400016: Bone.004
+    400018: Bone.004_end
+    400020: Bottoms19
+    400022: C_man_1_FBX2014 polySurface1
+    400024: //RootNode
+    400026: foot.l
+    400028: foot.l_end
+    400030: foot.r.001
+    400032: foot.r.001_end
+    400034: hand.l
+    400036: hand.l_end
+    400038: hand.r.001
+    400040: hand.r.001_end
+    400042: leg1.l
+    400044: leg1.r.001
+    400046: leg2.l
+    400048: leg2.r.001
+    400050: pasted__polySurface13 pasted__polySurface7 pasted__polySurface2
+    400052: pasted__polySurface7 pasted__polySurface2 pasted__Tops19 gr.001
+    400054: polySurface15 polySurface2 C_man_1_FBX2014
+    400056: polySurface2 C_man_1_FBX2014 polySurface16
+    400058: pSphere3
+    400060: pSphere4
+    400062: Tops8
+    2100000: lambert8SG
+    2100002: lambert10SG
+    2100004: lambert11SG
+    2100006: lambert14SG
+    2100008: lambert13SG
+    2100010: lambert7SG
+    2100012: lambert15SG
+    4300000: polySurface2 C_man_1_FBX2014 polySurface16
+    4300002: pSphere4
+    4300004: C_man_1_FBX2014 polySurface1
+    4300006: pasted__polySurface7 pasted__polySurface2 pasted__Tops19 gr.001
+    4300008: Bottoms19
+    4300010: polySurface15 polySurface2 C_man_1_FBX2014
+    4300012: Tops8
+    4300014: pasted__polySurface13 pasted__polySurface7 pasted__polySurface2
+    4300016: pSphere3
+    7400000: Take 001
     9500000: //RootNode
-    2186277476908879412: ImportLogs
+    13700000: Bottoms19
+    13700002: C_man_1_FBX2014 polySurface1
+    13700004: pasted__polySurface13 pasted__polySurface7 pasted__polySurface2
+    13700006: pasted__polySurface7 pasted__polySurface2 pasted__Tops19 gr.001
+    13700008: polySurface15 polySurface2 C_man_1_FBX2014
+    13700010: polySurface2 C_man_1_FBX2014 polySurface16
+    13700012: pSphere3
+    13700014: pSphere4
+    13700016: Tops8
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -83,7 +114,7 @@ ModelImporter:
     animationDoRetargetingWarnings: 0
     importAnimatedCustomProperties: 0
     importConstraints: 0
-    animationCompression: 3
+    animationCompression: 1
     animationRotationError: 0.5
     animationPositionError: 0.5
     animationScaleError: 0.5
@@ -115,7 +146,7 @@ ModelImporter:
     secondaryUVHardAngle: 88
     secondaryUVPackMargin: 4
     useFileScale: 1
-    previousCalculatedGlobalScale: 1
+    previousCalculatedGlobalScale: 0.01
     hasPreviousCalculatedGlobalScale: 1
   tangentSpace:
     normalSmoothAngle: 60
@@ -125,8 +156,8 @@ ModelImporter:
     legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
     blendShapeNormalImportMode: 1
     normalSmoothingSource: 0
-  importAnimation: 0
-  copyAvatar: 1
+  importAnimation: 1
+  copyAvatar: 0
   humanDescription:
     serializedVersion: 2
     human:
@@ -259,13 +290,13 @@ ModelImporter:
         length: 0
         modified: 0
     skeleton:
-    - name: dance2(Clone)
+    - name: cry(Clone)
       parentName: 
       position: {x: 0, y: 0, z: 0}
       rotation: {x: 0, y: 0, z: 0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: Armature
-      parentName: dance2(Clone)
+      parentName: cry(Clone)
       position: {x: -0, y: 0.57963693, z: 0}
       rotation: {x: -0.64657354, y: 0, z: -0, w: 0.76285166}
       scale: {x: 20.690815, y: 20.69082, z: 20.69082}
@@ -287,7 +318,7 @@ ModelImporter:
     - name: Bone.004
       parentName: Bone.003
       position: {x: 6.1200096e-17, y: 0.00663621, z: 1.4901161e-10}
-      rotation: {x: -0.10951425, y: 0.000000118492274, z: 0.000000013055115, w: 0.99398524}
+      rotation: {x: 0.30249158, y: 0.00000011362458, z: -0.000000036059806, w: 0.95315206}
       scale: {x: 1, y: 0.99999994, z: 1}
     - name: Bone.004_end
       parentName: Bone.004
@@ -296,18 +327,18 @@ ModelImporter:
       scale: {x: 1, y: 1, z: 1}
     - name: arm1.l
       parentName: Bone.001
-      position: {x: -0.007998443, y: 0.014522653, z: -0.0004709785}
-      rotation: {x: 0.1494049, y: 0.021071617, z: 0.8651713, w: 0.47823927}
+      position: {x: -0.00799844, y: 0.013669114, z: 0.008293417}
+      rotation: {x: 0.4378546, y: 0.42240608, z: 0.773777, w: 0.17642453}
       scale: {x: 0.99999994, y: 1.0000001, z: 0.99999994}
     - name: arm2.l
       parentName: arm1.l
       position: {x: -0.0000000018626451, y: 0.010904587, z: 1.11758706e-10}
-      rotation: {x: 0.60636526, y: 0.50269574, z: 0.53976774, w: 0.29710096}
+      rotation: {x: 0.71625686, y: 0.5736007, z: 0.3518021, w: 0.18491526}
       scale: {x: 1.0000001, y: 1, z: 1}
     - name: hand.l
       parentName: arm2.l
       position: {x: 2.5902408e-10, y: 0.013200415, z: 9.864743e-10}
-      rotation: {x: -0.1140991, y: -0.011040161, z: -0.03836515, w: 0.99266696}
+      rotation: {x: 0.115114085, y: 0.54205126, z: -0.16987637, w: 0.81490564}
       scale: {x: 1, y: 1.0000001, z: 1}
     - name: hand.l_end
       parentName: hand.l
@@ -316,18 +347,18 @@ ModelImporter:
       scale: {x: 1, y: 1, z: 1}
     - name: arm1.r.001
       parentName: Bone.001
-      position: {x: 0.008945689, y: 0.014522653, z: -0.00047098252}
-      rotation: {x: 0.91092736, y: 0.38045532, z: 0.14807472, w: 0.059489787}
+      position: {x: 0.008945691, y: 0.013669114, z: 0.008293414}
+      rotation: {x: 0.83382165, y: 0.3055341, z: 0.27077907, w: 0.37157664}
       scale: {x: 0.99999994, y: 0.99999994, z: 1}
     - name: arm2.r.001
       parentName: arm1.r.001
       position: {x: -7.543713e-10, y: 0.010904587, z: 0}
-      rotation: {x: 0.4632253, y: -0.39006367, z: 0.67563397, w: -0.42046583}
+      rotation: {x: 0.37043378, y: -0.33677465, z: 0.71589965, w: -0.4866718}
       scale: {x: 1.0000001, y: 1.0000001, z: 1.0000001}
     - name: hand.r.001
       parentName: arm2.r.001
       position: {x: -2.9802322e-10, y: 0.013200416, z: 9.2666597e-10}
-      rotation: {x: -0.025133938, y: 0.99124634, z: -0.117723055, w: -0.05422473}
+      rotation: {x: -0.10893296, y: 0.6429848, z: -0.051225334, w: 0.75635976}
       scale: {x: 1, y: 0.9999999, z: 0.99999994}
     - name: hand.r.001_end
       parentName: hand.r.001
@@ -375,47 +406,47 @@ ModelImporter:
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: polySurface2 C_man_1_FBX2014 polySurface16
-      parentName: dance2(Clone)
+      parentName: cry(Clone)
       position: {x: 0.003396121, y: 1.0028766, z: 0.054673675}
       rotation: {x: 0.000000095790035, y: 0, z: -0, w: 1}
       scale: {x: 1.9445075, y: 1.9445082, z: 1.9445081}
     - name: pSphere4
-      parentName: dance2(Clone)
+      parentName: cry(Clone)
       position: {x: 0.110574566, y: 1.5573313, z: 0.31348294}
       rotation: {x: 0.0000001496719, y: 6.5080843e-11, z: 6.508084e-11, w: 1}
       scale: {x: 1.9445075, y: 1.9445086, z: 1.9445082}
     - name: C_man_1_FBX2014 polySurface1
-      parentName: dance2(Clone)
+      parentName: cry(Clone)
       position: {x: 0.011384697, y: 1.7107917, z: -0.04609206}
       rotation: {x: 0.0000001496719, y: 6.5080843e-11, z: 6.508084e-11, w: 1}
       scale: {x: 1.9445075, y: 1.9445086, z: 1.9445082}
     - name: pasted__polySurface7 pasted__polySurface2 pasted__Tops19 gr.001
-      parentName: dance2(Clone)
+      parentName: cry(Clone)
       position: {x: -0.1354224, y: 0.008620465, z: 0.048413686}
       rotation: {x: 0.0000001496719, y: 6.5080843e-11, z: 6.508084e-11, w: 1}
       scale: {x: 1.9445075, y: 1.9445086, z: 1.9445082}
     - name: Bottoms19
-      parentName: dance2(Clone)
+      parentName: cry(Clone)
       position: {x: 0.011651743, y: 0.51829755, z: 0.047455437}
       rotation: {x: 0.0000001496719, y: 6.5080843e-11, z: 6.508084e-11, w: 1}
       scale: {x: 1.9445075, y: 1.9445086, z: 1.9445082}
     - name: polySurface15 polySurface2 C_man_1_FBX2014
-      parentName: dance2(Clone)
+      parentName: cry(Clone)
       position: {x: 0.0030240514, y: 1.4373207, z: 0.34597054}
       rotation: {x: 0.0000001496719, y: 6.5080843e-11, z: 6.508084e-11, w: 1}
       scale: {x: 1.9445075, y: 1.9445086, z: 1.9445082}
     - name: Tops8
-      parentName: dance2(Clone)
+      parentName: cry(Clone)
       position: {x: 0.007563108, y: 0.83820385, z: 0.046513256}
       rotation: {x: 0.0000001496719, y: 6.5080843e-11, z: 6.508084e-11, w: 1}
       scale: {x: 1.9445075, y: 1.9445086, z: 1.9445082}
     - name: pasted__polySurface13 pasted__polySurface7 pasted__polySurface2
-      parentName: dance2(Clone)
+      parentName: cry(Clone)
       position: {x: 0.1432318, y: 0.008839378, z: 0.047664497}
       rotation: {x: 0.0000001496719, y: 6.5080843e-11, z: 6.508084e-11, w: 1}
       scale: {x: 1.9445075, y: 1.9445086, z: 1.9445082}
     - name: pSphere3
-      parentName: dance2(Clone)
+      parentName: cry(Clone)
       position: {x: -0.11587734, y: 1.5573317, z: 0.31348288}
       rotation: {x: 0.0000001496719, y: 6.5080843e-11, z: 6.508084e-11, w: 1}
       scale: {x: 1.9445075, y: 1.9445086, z: 1.9445082}
@@ -430,8 +461,7 @@ ModelImporter:
     hasTranslationDoF: 0
     hasExtraRoot: 1
     skeletonHasParents: 1
-  lastHumanDescriptionAvatarSource: {fileID: 9000000, guid: b349755da82a146f9a57253993157afe,
-    type: 3}
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
   animationType: 3
   humanoidOversampling: 1
   additionalBone: 0
