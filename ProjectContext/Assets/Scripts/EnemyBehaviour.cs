@@ -16,7 +16,7 @@ public class EnemyBehaviour : MonoBehaviour
 	private void Start()
 	{
 		sound = FindObjectOfType<SoundManager>();
-        particle = Resources.Load("particle_hearts") as GameObject;
+        particle = Resources.Load("particle_clouds") as GameObject;
     }
 
 	private void Update()
@@ -40,8 +40,7 @@ public class EnemyBehaviour : MonoBehaviour
 		{
 			if (col.gameObject.tag == Tags.Bear)
 			{
-				Destroy(this.gameObject);
-                Instantiate(particle, col.transform);
+                Instantiate(particle, this.transform, false);
 				sound.PlayAudio(2);
 
 				if (EnemyDeadEvent != null)
