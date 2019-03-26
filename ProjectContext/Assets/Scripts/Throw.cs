@@ -22,7 +22,7 @@ public class Throw : MonoBehaviour
 
 	private void Update()
 	{
-		if (Input.GetMouseButtonDown(0) || Input.GetButtonDown("Fire1") && Time.time > nextFire)
+		if (Input.GetMouseButtonDown(0) && Time.time > nextFire || Input.GetButtonDown("Fire1") && Time.time > nextFire)
 		{
 			nextFire = Time.time + fireRate;
 			FirerateUI.Instance.CoolDown = true;
