@@ -10,6 +10,7 @@ public class NPCBehaviour : MonoBehaviour
 		if(col.gameObject.tag == Tags.Bear)
 		{
 			Debug.Log("Hit Target NPC");
+			Destroy(col.gameObject);
 
 			if (NPCHitEvent != null)
 			{

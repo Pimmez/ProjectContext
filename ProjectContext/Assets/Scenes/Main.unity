@@ -3313,6 +3313,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timer: 120
+  penaltyTime: 10
 --- !u!114 &1723892137
 MonoBehaviour:
   m_ObjectHideFlags: 0
