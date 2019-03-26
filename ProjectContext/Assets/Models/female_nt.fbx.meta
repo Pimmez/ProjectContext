@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 43f57560d32162543aa41cb2ef6bd4fb
+guid: 03b81b01f97e64070b5a7935d136182e
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
@@ -15,27 +15,26 @@ ModelImporter:
     100018: Bone.004_end
     100020: Bottoms19
     100022: C_man_1_FBX2014 polySurface1
-    100024: Camera
-    100026: //RootNode
-    100028: foot.l
-    100030: foot.l_end
-    100032: foot.r.001
-    100034: foot.r.001_end
-    100036: hand.l
-    100038: hand.l_end
-    100040: hand.r.001
-    100042: hand.r.001_end
-    100044: leg1.l
-    100046: leg1.r.001
-    100048: leg2.l
-    100050: leg2.r.001
-    100052: pasted__polySurface13 pasted__polySurface7 pasted__polySurface2
-    100054: pasted__polySurface7 pasted__polySurface2 pasted__Tops19 gr.001
-    100056: polySurface15 polySurface2 C_man_1_FBX2014
-    100058: polySurface2 C_man_1_FBX2014 polySurface16
-    100060: pSphere3
-    100062: pSphere4
-    100064: Tops8
+    100024: //RootNode
+    100026: foot.l
+    100028: foot.l_end
+    100030: foot.r.001
+    100032: foot.r.001_end
+    100034: hand.l
+    100036: hand.l_end
+    100038: hand.r.001
+    100040: hand.r.001_end
+    100042: leg1.l
+    100044: leg1.r.001
+    100046: leg2.l
+    100048: leg2.r.001
+    100050: pasted__polySurface13 pasted__polySurface7 pasted__polySurface2
+    100052: pasted__polySurface7 pasted__polySurface2 pasted__Tops19 gr.001
+    100054: polySurface15 polySurface2 C_man_1_FBX2014
+    100056: polySurface2 C_man_1_FBX2014 polySurface16
+    100058: pSphere3
+    100060: pSphere4
+    100062: Tops8
     400000: arm1.l
     400002: arm1.r.001
     400004: arm2.l
@@ -48,28 +47,26 @@ ModelImporter:
     400018: Bone.004_end
     400020: Bottoms19
     400022: C_man_1_FBX2014 polySurface1
-    400024: Camera
-    400026: //RootNode
-    400028: foot.l
-    400030: foot.l_end
-    400032: foot.r.001
-    400034: foot.r.001_end
-    400036: hand.l
-    400038: hand.l_end
-    400040: hand.r.001
-    400042: hand.r.001_end
-    400044: leg1.l
-    400046: leg1.r.001
-    400048: leg2.l
-    400050: leg2.r.001
-    400052: pasted__polySurface13 pasted__polySurface7 pasted__polySurface2
-    400054: pasted__polySurface7 pasted__polySurface2 pasted__Tops19 gr.001
-    400056: polySurface15 polySurface2 C_man_1_FBX2014
-    400058: polySurface2 C_man_1_FBX2014 polySurface16
-    400060: pSphere3
-    400062: pSphere4
-    400064: Tops8
-    2000000: Camera
+    400024: //RootNode
+    400026: foot.l
+    400028: foot.l_end
+    400030: foot.r.001
+    400032: foot.r.001_end
+    400034: hand.l
+    400036: hand.l_end
+    400038: hand.r.001
+    400040: hand.r.001_end
+    400042: leg1.l
+    400044: leg1.r.001
+    400046: leg2.l
+    400048: leg2.r.001
+    400050: pasted__polySurface13 pasted__polySurface7 pasted__polySurface2
+    400052: pasted__polySurface7 pasted__polySurface2 pasted__Tops19 gr.001
+    400054: polySurface15 polySurface2 C_man_1_FBX2014
+    400056: polySurface2 C_man_1_FBX2014 polySurface16
+    400058: pSphere3
+    400060: pSphere4
+    400062: Tops8
     2100000: lambert8SG
     2100002: lambert10SG
     2100004: lambert11SG
@@ -96,42 +93,7 @@ ModelImporter:
     13700012: pSphere3
     13700014: pSphere4
     13700016: Tops8
-  externalObjects:
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: lambert10SG
-    second: {fileID: 2100000, guid: c5a6fb6419b690c4aa94f7a0f53cba25, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: lambert11SG
-    second: {fileID: 2100000, guid: 74ca32f3dc7163243beb3e4b1d8897ab, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: lambert13SG
-    second: {fileID: 2100000, guid: 785669be94c764841853431e4b4d9766, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: lambert14SG
-    second: {fileID: 2100000, guid: f6e177de9b78f5541a4afe98810516d6, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: lambert15SG
-    second: {fileID: 2100000, guid: bc230fcc908ad0c4a9541913b7a22c4a, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: lambert7SG
-    second: {fileID: 2100000, guid: 30d073b14ba3f6045a95c54d7159b9b0, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: lambert8SG
-    second: {fileID: 2100000, guid: 179cf1e6a1ae1764faff4d62f498df92, type: 2}
+  externalObjects: {}
   materials:
     importMaterials: 1
     materialName: 0
