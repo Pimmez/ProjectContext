@@ -885,14 +885,14 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 6397828600d0ca34c8024b1750f44447, type: 2}
-    - target: {fileID: 2300484, guid: bdf9444fde8b1fd468d48cce76ac2669, type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 2301016, guid: bdf9444fde8b1fd468d48cce76ac2669, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 98ae396fbdf04cf4fa9fc4f4b0e8f525, type: 2}
+    - target: {fileID: 2300484, guid: bdf9444fde8b1fd468d48cce76ac2669, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bdf9444fde8b1fd468d48cce76ac2669, type: 3}
 --- !u!4 &643085505 stripped
@@ -2515,6 +2515,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 80fd311ccf6170b459890beaf39900b0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  fire: {fileID: 0}
 --- !u!114 &1119145757
 MonoBehaviour:
   m_ObjectHideFlags: 0
