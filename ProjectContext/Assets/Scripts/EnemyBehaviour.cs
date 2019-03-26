@@ -6,9 +6,15 @@ public class EnemyBehaviour : MonoBehaviour
 {
 	public static Action EnemyDeadEvent;
 
+	private SoundManager sound;
+
 	private bool isVulnerable = false;
 	[SerializeField] private Animator anim;
 
+	private void Start()
+	{
+		sound = FindObjectOfType<SoundManager>();
+	}
 
 	private void Update()
 	{
@@ -33,6 +39,7 @@ public class EnemyBehaviour : MonoBehaviour
 			{
 				Destroy(this.gameObject);
 				Destroy(col.gameObject);
+				sound.PlayAudio(2);
 
 				if (EnemyDeadEvent != null)
 				{

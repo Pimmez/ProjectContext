@@ -2,7 +2,6 @@
 
 public class Throw : MonoBehaviour
 {
-
 	private SoundManager sound;
 
 	public float FireRate { get { return fireRate; } }
