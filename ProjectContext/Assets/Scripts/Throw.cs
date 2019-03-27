@@ -1,9 +1,14 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 
 public class Throw : MonoBehaviour
 {
     public static bool gameStarted = false;
 	private SoundManager sound;
+
+	[SerializeField] private GameObject startUI;
+
+	[SerializeField] private GameObject UI;
 
 	public float FireRate { get { return fireRate; } }
 	public float NextFire { get { return nextFire; } }
@@ -26,9 +31,9 @@ public class Throw : MonoBehaviour
 
 	private void Update()
 	{
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonDown(0) || Input.GetButtonDown("Fire1"))
         {
-            if (gameStarted && Time.time > nextFire || Input.GetButtonDown("Fire1") && Time.time > nextFire)
+            if (gameStarted && Time.time > nextFire)
             {
                 nextFire = Time.time + fireRate;
                 FirerateUI.Instance.CoolDown = true;
@@ -41,8 +46,9 @@ public class Throw : MonoBehaviour
                 rb.velocity = Camera.main.transform.forward * throwStrength;
             } else if (!gameStarted)
             {
-                transform.Find("UI").gameObject.SetActive(true);
-                transform.Find("Startscreen").gameObject.SetActive(false);
+                UI.gameObject.SetActive(true);
+				startUI.gameObject.SetActive(false);
+				gameStarted = true;
             }
         }
 	}
