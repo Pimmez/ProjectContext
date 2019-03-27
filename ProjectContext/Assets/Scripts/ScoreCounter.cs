@@ -1,9 +1,12 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
+using System;
 
 public class ScoreCounter : MonoBehaviour
 {
-	[SerializeField] private int MaxScore = 4;
+	public static Action WinEvent;
+
+	[SerializeField] private int MaxScore = 8;
 
 	private Text scoreText;
 	private int totalScore = 0;
@@ -21,7 +24,11 @@ public class ScoreCounter : MonoBehaviour
     {
         if(totalScore == MaxScore)
 		{
-			Debug.Log("Game Won");
+			//Debug.Log("Game Won");
+			if(WinEvent != null)
+			{
+				WinEvent();
+			}
 		}
     }
 
