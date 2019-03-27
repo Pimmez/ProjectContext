@@ -6,14 +6,20 @@ public class EnemyBehaviour : MonoBehaviour
 {
 	public static Action EnemyDeadEvent;
 
-	private bool isVulnerable = false;
+	private SoundManager sound;
+	private ParticleInstantiater particles;
+
 	[SerializeField] private Animator anim;
 
+	private void Start()
+	{
+		sound = FindObjectOfType<SoundManager>();
+		particles = FindObjectOfType<ParticleInstantiater>();
+	}
 
 	private void Update()
 	{
 		StartCoroutine("Grab");
-		isVulnerable = true;
 	}
 
 	private IEnumerator Grab()
@@ -27,17 +33,15 @@ public class EnemyBehaviour : MonoBehaviour
 
 	private void OnTriggerEnter(Collider col)
 	{
-		if(isVulnerable)
+		if (col.gameObject.tag == Tags.Bear)
 		{
-			if (col.gameObject.tag == Tags.Bear)
-			{
-				Destroy(this.gameObject);
-				Destroy(col.gameObject);
+			Destroy(col.gameObject);
+			sound.PlayAudio(2);
+			particles.InstanciateParticle(1, this.transform);
 
-				if (EnemyDeadEvent != null)
-				{
-					EnemyDeadEvent();
-				}
+			if (EnemyDeadEvent != null)
+			{
+				EnemyDeadEvent();
 			}
 		}
 	}

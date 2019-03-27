@@ -15,7 +15,7 @@ public class SampleMessageListener : MonoBehaviour
 	{
 		if(readIncomingMessage == "1")
 		{
-			SceneManager.LoadScene("Main");
+			SceneManager.LoadScene("Intro");
 		}
 	}
 
