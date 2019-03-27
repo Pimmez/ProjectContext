@@ -2,6 +2,7 @@
 
 public class Throw : MonoBehaviour
 {
+    private bool gameStarted = false;
 	private SoundManager sound;
 
 	public float FireRate { get { return fireRate; } }
@@ -25,17 +26,24 @@ public class Throw : MonoBehaviour
 
 	private void Update()
 	{
-		if (Input.GetMouseButtonDown(0) && Time.time > nextFire || Input.GetButtonDown("Fire1") && Time.time > nextFire)
-		{
-			nextFire = Time.time + fireRate;
-			FirerateUI.Instance.CoolDown = true;
-			sound.PlayAudio(0);
+        if (Input.GetMouseButtonDown(0))
+        {
+            if (gameStarted && Time.time > nextFire || Input.GetButtonDown("Fire1") && Time.time > nextFire)
+            {
+                nextFire = Time.time + fireRate;
+                FirerateUI.Instance.CoolDown = true;
+                sound.PlayAudio(0);
 
-			muzzlePosition = ArmPosition.transform.position - offset;
-			GameObject projectile = Instantiate(prefab, muzzlePosition, Quaternion.identity) as GameObject;
-			Rigidbody rb = projectile.GetComponent<Rigidbody>();
-			projectile.transform.parent = null;
-			rb.velocity = Camera.main.transform.forward * throwStrength;
-		}
+                muzzlePosition = ArmPosition.transform.position - offset;
+                GameObject projectile = Instantiate(prefab, muzzlePosition, Quaternion.identity) as GameObject;
+                Rigidbody rb = projectile.GetComponent<Rigidbody>();
+                projectile.transform.parent = null;
+                rb.velocity = Camera.main.transform.forward * throwStrength;
+            } else if (!gameStarted)
+            {
+                transform.Find("UI").gameObject.SetActive(true);
+                transform.Find("Startscreen").gameObject.SetActive(false);
+            }
+        }
 	}
 }
