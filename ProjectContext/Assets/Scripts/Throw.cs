@@ -2,7 +2,6 @@
 
 public class Throw : MonoBehaviour
 {
-
 	private SoundManager sound;
 
 	public float FireRate { get { return fireRate; } }
@@ -11,7 +10,8 @@ public class Throw : MonoBehaviour
 	private GameObject prefab;
 	[SerializeField] private float throwStrength = 20;
 	[SerializeField] private GameObject ArmPosition;
-	[SerializeField] public float fireRate = 1;
+
+	private float fireRate = 1;
 	private float nextFire = 0.0F;
 
 	private Vector3 offset = new Vector3(0, 0.5f, 0);

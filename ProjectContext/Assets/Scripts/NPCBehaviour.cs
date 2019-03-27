@@ -3,14 +3,23 @@ using UnityEngine;
 
 public class NPCBehaviour : MonoBehaviour
 {
-	public static Action NPCHitEvent; 
+	public static Action NPCHitEvent;
+	private SoundManager sound;
+	private ParticleInstantiater particles;
+
+	private void Start()
+	{
+		sound = FindObjectOfType<SoundManager>();
+		particles = FindObjectOfType<ParticleInstantiater>();
+	}
 
 	private void OnTriggerEnter(Collider col)
 	{
 		if(col.gameObject.tag == Tags.Bear)
 		{
-			Debug.Log("Hit Target NPC");
 			Destroy(col.gameObject);
+			sound.PlayAudio(1);
+			particles.InstanciateParticle(0, this.transform);
 
 			if (NPCHitEvent != null)
 			{
