@@ -1,8 +1,10 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
+using System;
 
 public class CountdownTimer : MonoBehaviour
 {
+	public static Action GameLostEvent;
 
 	[Tooltip("Timer in Seconds")]
 	[SerializeField] private float timer = 60f;
@@ -27,7 +29,11 @@ public class CountdownTimer : MonoBehaviour
 		}
 		else
 		{
-			Debug.Log("GAME OVER");
+			//Debug.Log("GAME OVER");
+			if(GameLostEvent != null)
+			{
+				GameLostEvent();
+			}
 		}
 	}
 
