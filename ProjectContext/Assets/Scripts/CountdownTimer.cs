@@ -6,7 +6,9 @@ public class CountdownTimer : MonoBehaviour
 
 	[Tooltip("Timer in Seconds")]
 	[SerializeField] private float timer = 60f;
-	[SerializeField] private float penaltyTime = 0;
+
+	[Tooltip("Penalty What gets decreased from the Timer (In Seconds)")]
+	[SerializeField] private float penaltyTime = 10;
 
 	private Text timerText;
 
