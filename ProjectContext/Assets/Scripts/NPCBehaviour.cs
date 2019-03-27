@@ -17,7 +17,7 @@ public class NPCBehaviour : MonoBehaviour
 	{
 		if(col.gameObject.tag == Tags.Bear)
 		{
-			//Destroy(col.gameObject);
+			col.gameObject.tag = Tags.Untagged;
 			sound.PlayAudio(1);
 			particles.InstanciateParticle(0, this.transform);
 
