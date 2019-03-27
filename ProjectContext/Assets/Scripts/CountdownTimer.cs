@@ -21,7 +21,10 @@ public class CountdownTimer : MonoBehaviour
 
     private void Update()
     {
-		timer -= Time.deltaTime;
+        if (Throw.gameStarted)
+        {
+            timer -= Time.deltaTime;
+        }
 
 		if(timer > 0)
 		{

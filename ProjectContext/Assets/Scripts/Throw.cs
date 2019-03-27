@@ -2,7 +2,7 @@
 
 public class Throw : MonoBehaviour
 {
-    private bool gameStarted = false;
+    public static bool gameStarted = false;
 	private SoundManager sound;
 
 	public float FireRate { get { return fireRate; } }
