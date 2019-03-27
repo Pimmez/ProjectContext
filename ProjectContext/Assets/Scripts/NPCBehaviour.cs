@@ -13,11 +13,11 @@ public class NPCBehaviour : MonoBehaviour
 		particles = FindObjectOfType<ParticleInstantiater>();
 	}
 
-	private void OnTriggerEnter(Collider col)
+	private void OnCollisionEnter(Collision col)
 	{
 		if(col.gameObject.tag == Tags.Bear)
 		{
-			Destroy(col.gameObject);
+			//Destroy(col.gameObject);
 			sound.PlayAudio(1);
 			particles.InstanciateParticle(0, this.transform);
 
