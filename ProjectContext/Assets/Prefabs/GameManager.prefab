@@ -189,3 +189,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 660ab315d78624a4fbe2af7b62a48b81, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  startScene: StartScene

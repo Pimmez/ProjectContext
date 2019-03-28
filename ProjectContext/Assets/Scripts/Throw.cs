@@ -25,6 +25,7 @@ public class Throw : MonoBehaviour
 
 	private void Start()
 	{
+		gameStarted = false;
 		sound = FindObjectOfType<SoundManager>();
 		prefab = Resources.Load("projectile") as GameObject;
 	}
