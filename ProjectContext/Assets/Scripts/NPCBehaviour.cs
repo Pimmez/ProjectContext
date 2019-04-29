@@ -2,7 +2,6 @@
 using UnityEngine;
 using System.Collections;
 
-
 public class NPCBehaviour : MonoBehaviour
 {
 	public static Action NPCHitEvent;
@@ -24,6 +23,8 @@ public class NPCBehaviour : MonoBehaviour
 			sound.PlayAudio(1);
 			anim.SetBool("IsHit", true);
 
+
+
 			if (NPCHitEvent != null)
 			{
 				NPCHitEvent();
@@ -34,7 +35,7 @@ public class NPCBehaviour : MonoBehaviour
 	}
 
 	private IEnumerator CancelAnimation()
-	{ 
+	{
 		yield return new WaitForSeconds(1f);
 		anim.SetBool("IsHit", false);
 	}
