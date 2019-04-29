@@ -36,11 +36,13 @@ public class TextChangerOnBehaviour : MonoBehaviour
 	{
 		EnemyBehaviour.EnemyDeadEvent += ChangeTextEnemy;
 		NPCBehaviour.NPCHitEvent += ChangeTextNPC;
+		NPCFemaleBehaviour.FemaleHitEvent += ChangeTextNPC;
 	}
 
 	private void OnDisable()
 	{
 		EnemyBehaviour.EnemyDeadEvent -= ChangeTextEnemy;
 		NPCBehaviour.NPCHitEvent += ChangeTextNPC;
+		NPCFemaleBehaviour.FemaleHitEvent -= ChangeTextNPC;
 	}
 }

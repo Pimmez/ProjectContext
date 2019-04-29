@@ -23,8 +23,6 @@ public class NPCBehaviour : MonoBehaviour
 			sound.PlayAudio(1);
 			anim.SetBool("IsHit", true);
 
-
-
 			if (NPCHitEvent != null)
 			{
 				NPCHitEvent();
