@@ -19,7 +19,7 @@ public class EnemyBehaviour : MonoBehaviour
 
 	private void Update()
 	{
-		StartCoroutine("Grab");
+		StartCoroutine(Grab());
 	}
 
 	private IEnumerator Grab()
@@ -39,10 +39,25 @@ public class EnemyBehaviour : MonoBehaviour
 			sound.PlayAudio(2);
 			particles.InstanciateParticle(1, this.transform);
 
+			StopCoroutine(Grab());
+			anim.gameObject.GetComponent<Animator>().enabled = false;
+
 			if (EnemyDeadEvent != null)
 			{
 				EnemyDeadEvent();
 			}
+
+			StartCoroutine(TimeTillDeath());
+
+
 		}
+	}
+
+	IEnumerator TimeTillDeath()
+	{
+		yield return new WaitForSeconds(1f);
+
+		Destroy(this.gameObject);
+
 	}
 }

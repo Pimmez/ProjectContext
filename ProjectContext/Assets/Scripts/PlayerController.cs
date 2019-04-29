@@ -19,11 +19,11 @@ public class PlayerController : MonoBehaviour
 
     private void Update()
     {
-        ControllerInput();
-        //MouseInput();
+        //ControllerInput();
+        MouseInput();
 	}
 
-	/*
+	
 	private void MouseInput()
 	{
 		//Player Horizontal Rotation
@@ -40,8 +40,8 @@ public class PlayerController : MonoBehaviour
 
 		playerMotor.RotateCamera(_camRotation);
 	}
-	*/
-    
+	
+    /*
 	private void ControllerInput()
 	{
 		//Player Horizontal Rotation
@@ -58,4 +58,5 @@ public class PlayerController : MonoBehaviour
 
 		playerMotor.RotateCamera(_camConRotation);
 	}
+	*/
 }

@@ -8,15 +8,12 @@ public class NPCBehaviour : MonoBehaviour
 	public static Action NPCHitEvent;
 	[SerializeField] private Animator anim;
 
-	private SoundManager sound;
-	private ParticleInstantiater particles;
-	
+	private SoundManager sound;	
 
 	private void Start()
 	{
 		anim = GetComponent<Animator>();
 		sound = FindObjectOfType<SoundManager>();
-		particles = FindObjectOfType<ParticleInstantiater>();
 	}
 
 	private void OnCollisionEnter(Collision col)
@@ -26,8 +23,7 @@ public class NPCBehaviour : MonoBehaviour
 			col.gameObject.tag = Tags.Untagged;
 			sound.PlayAudio(1);
 			anim.SetBool("IsHit", true);
-			particles.InstanciateParticle(0, this.transform);
-			Debug.Log(anim);
+
 			if (NPCHitEvent != null)
 			{
 				NPCHitEvent();
