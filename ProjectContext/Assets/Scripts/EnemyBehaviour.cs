@@ -6,6 +6,7 @@ public class EnemyBehaviour : MonoBehaviour
 {
 	public static Action EnemyDeadEvent;
 
+	[SerializeField] private Avatar grabAvatar;
 	private SoundManager sound;
 	private ParticleInstantiater particles;
 
@@ -19,16 +20,21 @@ public class EnemyBehaviour : MonoBehaviour
 
 	private void Update()
 	{
-		StartCoroutine(Grab());
+		if(anim.GetCurrentAnimatorStateInfo(0).normalizedTime > 1 && !anim.IsInTransition(0))
+		{
+
+			StartCoroutine(WaitFewSeconds());
+		}
+
+		//InvokeRepeating("GrabNPC", 2.0f, UnityEngine.Random.Range(3f, 10f));
 	}
 
-	private IEnumerator Grab()
+	IEnumerator WaitFewSeconds()
 	{
-		anim.SetBool("Pickup", true);
+		yield return new WaitForSeconds(UnityEngine.Random.Range(2f, 10f));
+		anim.SetTrigger("Grab");
+		anim.avatar = grabAvatar;
 
-		yield return new WaitForSeconds(3f);
-
-		anim.SetBool("Pickup", false);
 	}
 
 	private void OnTriggerEnter(Collider col)
@@ -39,7 +45,6 @@ public class EnemyBehaviour : MonoBehaviour
 			sound.PlayAudio(2);
 			particles.InstanciateParticle(1, this.transform);
 
-			StopCoroutine(Grab());
 			anim.gameObject.GetComponent<Animator>().enabled = false;
 
 			if (EnemyDeadEvent != null)
@@ -48,8 +53,6 @@ public class EnemyBehaviour : MonoBehaviour
 			}
 
 			StartCoroutine(TimeTillDeath());
-
-
 		}
 	}
 
@@ -58,6 +61,5 @@ public class EnemyBehaviour : MonoBehaviour
 		yield return new WaitForSeconds(1f);
 
 		Destroy(this.gameObject);
-
 	}
 }
