@@ -3,14 +3,21 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+
 public class WinLoseCondition : MonoBehaviour
 {
-
+	private Animator anim;
 	[SerializeField] private string gameWonScene;
 	[SerializeField] private string gameOverScene;
 
+	private void Start()
+	{
+		anim = GetComponent<Animator>();
+	}
+
 	private void GameWon()
 	{
+		anim.SetTrigger("Activate");
 		SceneManager.LoadScene(gameWonScene);
 	}
 
