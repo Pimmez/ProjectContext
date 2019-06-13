@@ -17,8 +17,14 @@ public class WinLoseCondition : MonoBehaviour
 
 	private void GameWon()
 	{
+
+		Debug.Log("WON");
 		anim.SetTrigger("Activate");
-		SceneManager.LoadScene(gameWonScene);
+
+
+
+
+		//SceneManager.LoadScene(gameWonScene);
 	}
 
 	private void GameOver()

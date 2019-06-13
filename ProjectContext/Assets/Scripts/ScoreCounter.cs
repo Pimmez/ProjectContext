@@ -24,7 +24,6 @@ public class ScoreCounter : MonoBehaviour
     {
         if(totalScore == MaxScore)
 		{
-			//Debug.Log("Game Won");
 			if(WinEvent != null)
 			{
 				WinEvent();
