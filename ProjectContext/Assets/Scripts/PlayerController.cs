@@ -10,8 +10,11 @@ public class PlayerController : MonoBehaviour
 	private PlayerMotor playerMotor;
 	private float yRot, xRot, yConRot, xConRot;
 
+	private Animator anim;
+
 	private void Start()
     {
+		anim = GetComponent<Animator>();
 		Cursor.lockState = CursorLockMode.Locked;
 		Cursor.visible = false;
 		playerMotor = GetComponent<PlayerMotor>();
@@ -41,7 +44,27 @@ public class PlayerController : MonoBehaviour
 		playerMotor.RotateCamera(_camRotation);
 	}
 	
-    /*
+	private void ActivateAnimation(bool even)
+	{
+		lookSensitivityX = 0;
+		lookSensitivityY = 0;
+		anim.SetBool("isEndGame", even);
+
+	}
+
+	private void OnEnable()
+	{
+		WinLoseCondition.AnimationPlayerEvent += ActivateAnimation;
+	}
+
+	private void OnDisable()
+	{
+		WinLoseCondition.AnimationPlayerEvent -= ActivateAnimation;
+	}
+
+
+
+	/*
 	private void ControllerInput()
 	{
 		//Player Horizontal Rotation

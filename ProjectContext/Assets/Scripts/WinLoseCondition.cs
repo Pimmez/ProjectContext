@@ -2,29 +2,30 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-
+using System;
 
 public class WinLoseCondition : MonoBehaviour
 {
-	private Animator anim;
+	public static Action<bool> AnimationPlayerEvent;
+
 	[SerializeField] private string gameWonScene;
 	[SerializeField] private string gameOverScene;
 
-	private void Start()
-	{
-		anim = GetComponent<Animator>();
-	}
 
 	private void GameWon()
 	{
+		if(AnimationPlayerEvent != null)
+		{
+			AnimationPlayerEvent(true);
+		}
 
-		Debug.Log("WON");
-		anim.SetTrigger("Activate");
+		StartCoroutine("EndGameWithAnim");
+	}
 
-
-
-
-		//SceneManager.LoadScene(gameWonScene);
+	private IEnumerator EndGameWithAnim()
+	{
+		yield return new WaitForSeconds(3f);
+		SceneManager.LoadScene(gameWonScene);
 	}
 
 	private void GameOver()

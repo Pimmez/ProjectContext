@@ -53,4 +53,20 @@ public class Throw : MonoBehaviour
             }
         }
 	}
+
+	private void ActivateAnimation(bool even)
+	{
+		throwStrength = 0;
+	}
+
+	private void OnEnable()
+	{
+		WinLoseCondition.AnimationPlayerEvent += ActivateAnimation;
+	}
+
+	private void OnDisable()
+	{
+		WinLoseCondition.AnimationPlayerEvent -= ActivateAnimation;
+	}
+
 }
